@@ -28,9 +28,27 @@ CSS 기본학습
 `인라인 코딩`
 
 
-```javascript
-using System 10;
- 
+```csharp
+let sumNumbers = (firstNum, lastNum) => {
+
+  return firstNum + lastNum;
+
+};
+
+sumNumbers(100, 200);
+
+```
+
+
+```python
+
+num_list = ['one', 'two', 'three']
+
+for num in num_list:
+
+  print(num)
+
+
 
 
 ```
