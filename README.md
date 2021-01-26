@@ -10,12 +10,12 @@ HTML5,CSS,JS 학습용 리포지토리
 ### HTML이란?
 개요에 대해서 학습합니다
 - Hyper Text Markup Language 정의
-- HTML 역사
+- __HTML__ _역사_
 - HTML5의 차이점
 
 - Hyper Text Markup Language 정의
 - HTML 역사
-- HTML5의 차이점
+-  **HTML5**의 ~차이점~
   - UL 2
   - UL 3
 
