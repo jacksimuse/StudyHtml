@@ -50,6 +50,8 @@ for num in num_list:
 -----------
 - [Microsoft](https://www.microsoft.com)
 - [Naver](http://www.naver.com)
+
+![실행결과](https://github.com/jacksimuse/StudyHtml/blob/main/ref_images/img_20210126_160440_001.png "실행결과")
 -----------------------------------
 
 ## Javascript
