@@ -55,7 +55,7 @@ for num in num_list:
 <img src="https://github.com/jacksimuse/StudyHtml/blob/main/ref_images/img_20210126_160440_001.png" width="450px" height="300px" title="실행결과" alt="실행결과"/>
 ![실행결과](/ref_images/img_20210126_160440_001.png "실행결과")
 
-- [x] 운동하기
+- [] 운동하기
 - [ ] 코딩하기
 
 * [x] 운동하기
