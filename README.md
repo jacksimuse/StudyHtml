@@ -52,6 +52,7 @@ for num in num_list:
 - [Naver](http://www.naver.com)
 
 ![실행결과](https://github.com/jacksimuse/StudyHtml/blob/main/ref_images/img_20210126_160440_001.png "실행결과")
+![실행결과](/ref_images/img_20210126_160440_001.png "실행결과")
 -----------------------------------
 
 ## Javascript
