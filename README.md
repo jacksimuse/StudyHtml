@@ -15,7 +15,7 @@ HTML5,CSS,JS 학습용 리포지토리
 
 - Hyper Text Markup Language 정의
 - HTML 역사
--  **HTML5**의 ~차이점~
+-  **HTML5**의 _~차이점~_
   - UL 2
   - UL 3
 
