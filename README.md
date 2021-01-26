@@ -1,6 +1,5 @@
 # HTML 학습 리포지토리
-
- = HTML5,CSS,JS 학습용 리포지토리
+HTML5,CSS,JS 학습용 리포지토리
 
 ## HTML5
 - HTML 기본 학습
