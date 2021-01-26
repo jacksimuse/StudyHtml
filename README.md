@@ -37,10 +37,6 @@ let sumNumbers = (firstNum, lastNum) => {
 
 sumNumbers(100, 200);
 
-```
-
-
-```python
 
 num_list = ['one', 'two', 'three']
 
