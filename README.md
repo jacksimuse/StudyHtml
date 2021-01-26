@@ -44,10 +44,6 @@ for num in num_list:
 
   print(num)
 
-
-
-
-```
 ```
 
 참조링크
