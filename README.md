@@ -16,8 +16,8 @@ HTML5,CSS,JS 학습용 리포지토리
 + Hyper Text Markup Language 정의
 + HTML 역사
 + HTML5의 차이점
-  -UL 2
-  -UL 3
+  +UL 2
+  +UL 3
 
 -----------------------------------
 ## CSS3
