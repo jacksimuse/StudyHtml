@@ -1,0 +1,1 @@
+alert("Outer script executed")
