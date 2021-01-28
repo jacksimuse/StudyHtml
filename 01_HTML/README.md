@@ -10,3 +10,13 @@
 
 
 ![이전](https://github.com/jacksimuse/StudyHtml)
+
+
+```html
+ <article>
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut blanditiis dolor
+                    aliquam et cumque qui voluptates suscipit? Consequatur quasi, harum ad magnam
+                    ullam quo, eius vero soluta praesentium excepturi aperiam.</p>
+            </article>
+```
