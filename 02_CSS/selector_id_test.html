@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <style>
+            #header {
+                width: 800px;
+                height: 300px;
+                margin: 0 auto;
+                background-color: coral;
+            }
+
+            #wrap {
+                width: 800px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
+            #aside {
+                width: 300px;
+                float: right;
+                background-color: lawngreen;
+            }
+
+            #content {
+                width: 500px;
+                float: left;
+                background: green;
+            }
+
+            #footer {
+                width: 800px;
+                float: left;
+                background: blue;
+            }
+            .fruits {
+                color: red;
+                font-weight: bold;
+            }
+            .item {
+                color: salmon;
+            }
+            .footer {
+                background-color: silver;
+            }
+            input[type="text"] {
+                background: red;
+            }
+            input[type="password"] {
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>#header 태그</h1>
+        </div>
+        <div id="wrap">
+            <div id="aside">
+                <h1>#aside 태그</h1>
+                <ul>
+                    <li class="fruits">
+                        <a href="http:/www.naver.com">사과</a>
+                    </li>
+                    <li>
+                        <a href="http://www.naver.com">배</a>
+                    </li>
+                    <li>
+                        <a href="http://www.naver.com">바나나</a>
+                    </li>
+                    <li class="fruits">
+                        <a href="http://www.naver.com">딸기</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="content">
+                <h1>#content 태그</h1>
+            </div>
+            <div id="footer">
+                <h1 class="item footer">#footer 태그</h1>
+            </div>
+        </div>
+        <form>
+            <input type="text">
+            <input type="password"><br>ID 비밀번호
+        </form>
+    </body>
+</html>
