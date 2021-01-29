@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <style>
+            #header > h2 {
+                color: red;
+            }
+
+            #section h2 {
+                color: orange;
+            }
+            h2:hover {
+                background-color: black;
+            }
+
+            h2:active {
+                color: blue;
+            }
+            input:focus {
+                background-color: orange;
+                
+            }
+            input:enabled {
+                background-color: greenyellow;
+            }
+            input:disabled {
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h2 class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Saepe voluptatum nulla nam id libero qui eveniet, aspernatur velit optio totam?
+                Eveniet quo quam veniam adipisci maxime fugiat pariatur tenetur quis!</h2>
+            <div id="nav">
+                <h2>Navigation</h2>
+            </div>
+            <h3>subtitle</h3>
+        </div>
+        <div id="section">
+            <h2 class="title">Lorem ipsum
+            </h2>
+            <p>dolor sit amet consectetur adipisicing elit. Fuga officiis aliquid ipsam
+                magni quo! Officia distinctio nobis exercitationem pariatur ipsa nisi
+                dignissimos, modi sapiente neque doloremque nostrum quidem error reprehenderit!</p>
+        </div>
+        <div>
+            <form>
+                <label for="">이름</label>
+                <input name="user_id" type="text" value="personar95"><br>
+                <label for="">비밀번호</label>
+                <input name="password" type="password" value="" disabled="disabled"><br>
+            </form>
+        </div>
+    </body>
+</html>
