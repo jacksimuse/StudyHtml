@@ -10,12 +10,11 @@ HTML 기본 학습
 ### HTML 기본 학습
 !{HTML소스}(https://github.com/jacksimuse/StudyHtml/tree/main/01_HTML)
 
-!{CSS 소스}(https://github.com/jacksimuse/StudyHtml/tree/main/02_CSS)
-
 -----------------------------------
 ## CSS3
 CSS 기본학습
 
+!{CSS 소스}(https://github.com/jacksimuse/StudyHtml/tree/main/02_CSS)
 ----------------------------------
 
 ## Javascript
