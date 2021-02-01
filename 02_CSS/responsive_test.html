@@ -5,8 +5,31 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
-   <link rel="stylesheet" href="styles/screen.css" media="screen">
-   <link rel="stylesheet" href="styles/print.css" media="print">
+    <style>
+        /* 모바일
+        @media (max-width: 499px) {
+            body { background: red; }
+        }
+        /* 태블릿 */
+        /* @media (min-width: 500px) and (max-width: 799px) {
+            body { background: green; }
+        }
+        /* 일반웹 */
+        /* @media (min-width: 800px) {
+            body { background: blue; }
+        } */
+        @media screen and (orientation: portrait) {
+            body {
+                background-color: red;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            body {
+                background-color: green;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe modi quae, explicabo quam placeat odit? Amet facere temporibus perspiciatis illo quisquam voluptatem aliquam recusandae eos facilis totam numquam, adipisci quaerat.</h1>
