@@ -12,15 +12,14 @@
             console.log(header.innerText);
             
             
-            setInterval(() => {header.style.backgroundColor = "red";
-            header.style.color = "orange";
-            header.innerText = "Hello, World!";
-                
-            }, 3000);
+            setInterval(() => {
             header.style.backgroundColor = "red";
             header.style.color = "orange";
             header.innerText = "Hello, World!";
-        }
+        }, 3000);
+    }
+            
+        
         function changeColor(newColor) {
             var header = document.getElementById("header");
             header.style.color = newColor;
@@ -29,6 +28,6 @@
 </head>
 <body>
     <h1 id="header">Header</h1>
-    <input type="button" value="change color" onclick="changeColor('blue');">
+    <input type="button" value="change color" onclick="changeColor('green');">
 </body>
 </html>
