@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>One True layout</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            margin: 0 auto;
+            width: 800px;
+        }
+        #header {
+            background-color: cornflowerblue;
+            overflow: hidden;
+        }
+        #section {
+            overflow: hidden;
+        }
+        #aside {
+            float: left;
+            width: 200px;
+            background-color: blueviolet;
+        }
+        #content {
+            float: left;
+            width: 600px;
+            background-color: chocolate;
+        }
+        #footer {
+            background-color: cyan;
+        }
+        .ellipsis {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header" class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quidem cumque veniam quibusdam sint natus. Quidem perspiciatis laborum numquam, quibusdam fuga aspernatur tempora. Unde alias ipsum aliquam obcaecati impedit laudantium.</div>
+    <div id="section">
+        <div id="aside">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nam laboriosam fugiat ab tenetur rerum quisquam, consectetur veniam tempora reprehenderit odit eveniet soluta! Quam deserunt, commodi earum doloremque placeat beatae.</div>
+        <div id="content" class="ellipsis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat fugit delectus ut ea voluptas earum error? Maiores ratione ducimus expedita perferendis necessitatibus omnis, neque sequi amet, deserunt eveniet officiis aspernatur.</div>
+    </div>
+    <div id="footer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatibus porro, harum velit amet distinctio corrupti corporis perferendis voluptas ratione esse at vitae earum? Aliquid error voluptatum repellat voluptatibus porro?
+    </div>
+</body>
+</html>
