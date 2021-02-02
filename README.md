@@ -35,3 +35,6 @@ Javascript 기본 학습
 
 ## Projaect
 전체 통합 프로젝트
+
+### Project 핀터레스트
+[Pinterest](https://github.com/jacksimuse/StudyHtml/tree/main/04_Project)
