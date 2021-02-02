@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Interest</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- 초기화 -->
+    <style>
+        * { 
+            margin: 0; padding: 0;
+            font-family: 'D2coing', Helvetica, sans-serif;
+        }
+        a { text-decoration: none;}
+        img {border: 0;}
+        li {list-style: none;}
+        html {background-color: #f7f5f5;}
+    </style>
+    <!-- 헤더 -->
+    <style>
+        #main-header {
+            height: 40px;
+            background-color: #faf7f7;
+            position: relative;
+        }
+        .header-search-form {float: left;}
+        .header-menu {float: right;}
+        .header-title {
+            position: absolute;
+            width: 200px; height: 40px;
+            left: 50%; margin-left: -100px;
+            background-image: url('images/logo.png');
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+        }
+        /* 메뉴 */
+        .outer-menu {
+            float: left;
+            width: 100px; height: 20px;
+            line-height: 20px;
+            padding: 10px 0;
+            position: relative;
+            text-align: center;
+
+            font-size: 13px;
+            font-weight: bold;
+
+            z-index: 9999;
+        }
+        .outer-menu:hover {background-color: #e1dfdf;}
+
+        .inner-menu { 
+            display: none;
+            background-color: #ffffff;
+            margin-top: 10px;
+            width: 100%;
+            border: 1px solid #cccaca;
+            box-shadow: 0 2px 4px rgba(34, 25, 25, 0.5);
+        }
+        .inner-menu a {
+            display: block;
+            padding: 5px 10px;
+            z-index: 5000;
+        }
+        .inner-menu a:hover {
+            background-color: #e1dfdf;
+        }
+        /*  메인 네비게이션 */
+        #main-navigation {
+            height: 30px;
+            background-color: #faf7f7;
+            border-top: 1px solid #cfcaca ;
+            box-shadow: 1px 3px 3px rgba(34, 25, 25, 0.5);
+        }
+        #main-navigation > ul {
+            overflow: hidden;
+            text-align: center;
+        }
+        #main-navigation > ul > li {
+            display: inline;
+            padding: 0 5px;
+            line-height: 30px;
+            font-size: 13px;
+            color: #524d4d;
+            text-shadow: 0 1px 1px white;
+        }
+        #main-navigation > ul > li:hover {
+            background: #e1dfdf;
+            border-radius: 2px;
+        }
+    </style>
+    
+    <script src="ref_images/jquery-3.5.1.min.js"></script>
+    <script src="ref_images/imagesloaded.pkgd.min.js"></script>
+    <script src="ref_images/masonry.pkgd.min.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-search-form">
+            <form>
+                <input type="search" class="input-search">
+                <input type="submit" class="input-submit" value="검색">
+            </form>
+        </div>
+        <h1 class="header-title">Interest</h1>
+        <div class="header-menu">
+            <ul class="outer-menu">
+                <li><a href="#">정보</a>
+                <ul class="inner-menu">
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                </ul>
+                </li>
+            </ul>
+            <ul class="outer-menu">
+                <li><a href="#">사용자</a>
+                <ul class="inner-menu">
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav id="main-navigation">
+        <ul>
+            <li><a href="#">Following</a></li>
+            <li><a href="#">Catergories</a></li>
+            <li><a href="#">Everything</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Gift</a></li>
+        </ul>
+    </nav>
+    <section id="main-section">
+        <!-- 페이퍼 여러번 복사할 것 -->
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="http://placehold.it/190x306"></a>
+            </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet</p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="http://placehold.it/190x100">
+                    </a>
+                    <p class="paper-text">Lorem, ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <!-- 복사 끝 -->
+         </section>
+         <div id="darken-backgrond">
+             <div id="lightbox">
+                 <div class="user-information">
+                     <a class="user-information-image" href="#">
+                         <img src="http://placehold.it/70x70">
+                     </a>
+                     <div class="user-information-text">
+                         <h3>User</h3>
+                         <p>Lorem ipsum dolor sit amet</p>
+                     </div>
+                 </div>
+                 <hr class="lightbox-splitter">
+                 <img src="http://placehold.it/600x750">
+             </div>
+         </div>
+    <footer id="main-footer"></footer>
+</body>
+</html>
