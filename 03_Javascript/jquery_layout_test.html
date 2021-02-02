@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='js/jquery-3.5.1.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <style>
+        * { margin: 0px; padding: 0px; }
+        .box { background-color: indigo;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    </style>
+    <script>
+        $(document).ready(function () {
+            for (let index = 0; index < 100; index++) {
+                $('<img class=\"box\">').css({
+                    width: '100px',
+                    height: Math.floor(Math.random() * 100) + 50
+                }).appendTo('body');
+                
+            } // 100개의타일형 이미지 생성
+
+            //masonry 그리드 적용
+            $('body').masonry({
+                columnwidth: 110
+            });
+
+            $("img:nth-child(2n+1)").attr({
+                src: "images/cat01.jpg"
+            });
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

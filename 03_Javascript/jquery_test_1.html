@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <script src='js/jquery-3.5.1.min.js'></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        //로드 이벤트 / 구세대 유물
+        // window.onload = function () {}
+
+        //jquery 이후에 바뀐 로드 이벤트
+        $(document).ready(function() {
+            alert("Hello World!");
+
+            $("h1").css("background-color", "black");
+            $("h1").css("color", "white");
+
+            console.log($('script').attr('src'));
+
+            //이미지 속성 변경
+            // $('img').attr('alt', 'jquery라이브러리로 속성 지정');
+            // $('img').attr('src', 'http://placehold.it/200x200');
+            // $('img').attr('width', '100px');
+            // $('img').attr({
+            //     alt : 'jQuery 라이브러리를 사용한 속성 지정',
+            //     src : 'http://placehold.it/100x100',
+            //     width : 100
+            // });
+            $('img').attr({
+                alt : 'jQuery 라이브러리를 사용한 속성 지정',
+                src : function (index) {
+                    //변수 선언
+                    var size = (index + 1 ) * 100;
+                    return 'http://placehold.it/' + size + "x200";
+                }
+               
+            });
+            // box 클래스 사용
+            $('.box').css({
+                float : 'left',
+                margin : '10px',
+                width : 100,
+                height : 100,
+                backgroundColor : function(index) {
+                    if (index == 0) {
+                        return 'red';
+                   } else if (index == 1) {
+                        return 'green';
+                   } else {
+                       return 'blue';
+                   }
+                }
+            });
+        });
+        </script>
+</head>
+<body>
+    <h1>jquery</h1>
+    <h1>Hello, World</h1>
+    <h1>Tuseday</h1>
+    <br>
+    <img>
+    <img>
+    <img>
+    <br>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>

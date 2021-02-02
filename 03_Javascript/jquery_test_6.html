@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='js/jquery-3.5.1.min.js'></script>
+    <script>
+        $(document).ready(function () {
+            //문서객체 추가 함수
+            var appendDoc = function () {
+                for (let index = 0; index < 40; index++) {
+                    $('<h1>Infinity scroll' + index + '</h1>').appendTo('body');
+                    
+                }
+            }
+
+            appendDoc(); // 함수 호출
+
+            $(window).scroll(function () {
+                var scrollHeight = $(window).scrollTop() +$(window).height();
+                var documentHeight = $(document).height();
+
+                if (scrollHeight == documentHeight ) {
+                    appendDoc();
+                }
+            
+            });
+            
+        });
+        
+    </script>
+</head>
+<body>
+  
+</body>
+</html>
