@@ -8,7 +8,7 @@ HTML5,CSS,JS 학습용 리포지토리
 HTML 기본 학습
 
 ### HTML 기본 학습
-[HTML소스](https://github.com/jacksimuse/StudyHtml/tree/main/01_HTML)
+[HTML 소스](https://github.com/jacksimuse/StudyHtml/tree/main/01_HTML)
 
 -----------------------------------
 
@@ -22,6 +22,9 @@ CSS 기본 학습
 
 ## Javascript
 Javascript 기본 학습
+
+### Javascript 기본학습
+[Javascript 소스](https://github.com/jacksimuse/StudyHtml/tree/main/03_Javascript)
 
 ---------------------------------------
 
