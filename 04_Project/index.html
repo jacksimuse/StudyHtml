@@ -46,8 +46,8 @@
             function showLightBox() {
                 $("#random-image").attr({
                     src: function() {
-                        var rnd_height = 500 + Math.floor(Math.random * 600) * 100;
-                        return "http://placekitten.com/600/" + rnd_height;
+                        var rnd_height = 500 + Math.floor(Math.random() * 100);
+                        return "https://placekitten.com/600/" + rnd_height;
                     }
                 });
                 $("#darken-background").show();
@@ -479,7 +479,7 @@
             <div id="lightbox">
                 <div class="user-information">
                     <a class="user-information-image" href="#">
-                        <img src="http://placehold.it/70x70">
+                        <img src="https://placekitten.com/70/70">
                     </a>
                     <div class="user-information-text">
                         <h3>User</h3>
