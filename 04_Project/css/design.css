@@ -1,0 +1,96 @@
+ /* 페이퍼 스타일 */
+ .paper {
+    width: 190px;
+    margin-top: 10px;
+    padding: 15px 15px 0;
+    font-size: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5);
+}
+.paper-description {
+    margin: 10px 0;
+
+}
+.paper-content {
+    margin: 10px -15px 0;
+    padding: 10px 15px;
+    background-color: #f2f0f0;
+    overflow: hidden;
+}
+.paper-link {
+    display: block;
+    float: left;
+}
+.paper-text {
+    float: left;
+    width: 150px;
+    margin-left: 10px;
+}
+
+/* 섹션 스타일 */
+#main-section {
+    width: 920px;
+    margin: 0 auto;
+}
+@media (max-width: 919px) {
+    /*세줄*/
+    #main-section {
+        width: 690px;
+    }
+}
+@media (min-width: 920px) and (max-width: 1149px) {
+    /*네줄*/
+    #main-section {
+        width: 920px;
+    }
+}
+@media (min-width: 1150px) and (max-width: 1379px) {
+    /*다섯줄*/
+    #main-section {
+        width: 1150px;
+    }
+}
+@media (min-width: 1380px) {
+    /*여섯줄*/
+    #main-section {
+        width: 1380px;
+    }
+}
+
+/* 라이트박스 */
+#darken-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10000;
+    overflow-y: scroll;
+}
+#lightbox {
+    width: 700px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 5px rgba(34, 25, 25, 0.4);
+    text-align: center;
+}
+.user-information {
+    overflow: hidden;
+    text-align: left;
+}
+.user-information-image {
+    float: left;
+    width: 70px;
+}
+.user-information-tex {
+    float: right;
+    width: 620px;
+}
+.lightbox-splitter {
+    margin: 10px 0;
+}

@@ -5,234 +5,10 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Interest</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <style>
-            /* 초기화 */
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: 'NanumGothic',sans-serif;
-            }
-            a {
-                text-decoration: none;
-            }
-            img {
-                border: 0;
-            }
-            li {
-                list-style: none;
-            }
-            html {
-                background-color: #f7f5f5;
-            }
-        </style>
-        <style>
-            /* 헤더 */
-            #main-header {
-                height: 40px;
-                background-color: #faf7f7;
-                position: relative;
-            }
-            .header-search-form {
-                float: left;
-            }
-            .header-menu {
-                float: right;
-            }
-            .header-title {
-                position: absolute;
-                width: 200px;
-                height: 40px;
-                left: 50%;
-                margin-left: -100px;
-                background-image: url("images/logo.png");
-                background-repeat: no-repeat;
-                text-indent: -9999px;
-            }
-            /* 메뉴 */
-            .outer-menu {
-                float: left;
-                width: 100px;
-                height: 20px;
-                line-height: 20px;
-                padding: 10px 0;
-                position: relative;
-                text-align: center;
+        <link rel="stylesheet" href="css/init.css">
+        <link rel="stylesheet" href="css/design.css">
+        <link rel="stylesheet" href="css/form.css">
 
-                font-size: 13px;
-                font-weight: bold;
-
-                z-index: 9999;
-            }
-            .outer-menu:hover {
-                background-color: #e1dfdf;
-            }
-
-            .inner-menu {
-                display: none;
-                background-color: #ffffff;
-                margin-top: 10px;
-                width: 100%;
-                border: 1px solid #cccaca;
-                box-shadow: 0 2px 4px rgba(34, 25, 25, 0.5);
-            }
-            .inner-menu a {
-                display: block;
-                padding: 5px 10px;
-                z-index: 5000;
-            }
-            .inner-menu a:hover {
-                background-color: #e1dfdf;
-            }
-            /*  메인 네비게이션 */
-            #main-navigation {
-                height: 30px;
-                background-color: #faf7f7;
-                border-top: 1px solid #cfcaca;
-                box-shadow: 1px 3px 3px rgba(34, 25, 25, 0.5);
-            }
-            #main-navigation > ul {
-                overflow: hidden;
-                text-align: center;
-            }
-            #main-navigation > ul > li {
-                display: inline;
-                padding: 0 5px;
-                line-height: 30px;
-                font-size: 13px;
-                color: #524d4d;
-                text-shadow: 0 1px 1px white;
-            }
-            #main-navigation > ul > li:hover {
-                background: #e1dfdf;
-                border-radius: 2px;
-            }
-            /* 검색양식 */
-            .header-search-form {
-                padding: 7px;
-            }
-            .input-search {
-                height: 26px;
-                display: block;
-                float: left;
-                background-color: #ffffff;
-                border: 1px solid #cccccc;
-                border-radius: 15px 0 0 15px;
-                box-shadow: inset 0 1px rgba(0, 0, 0, 0.5);
-            }
-            .input-search:focus {
-                box-shadow: inset 0 1px rgba(0, 0, 0, 0.5);
-                outline: 0;
-                border-color: rgba(82, 168, 236, 0.8);
-            }
-            .input-submit {
-                display: block;
-                float: left;
-                width: 50px;
-                height: 26px;
-                border-radius: 0 15px 15px 0;
-                border: 1px solid #cccccc;
-                margin-left: -1px;
-                /* vertical-align: top; */
-            }
-        </style>
-        <style>
-            /* 페이퍼 스타일 */
-            .paper {
-                width: 190px;
-                margin-top: 10px;
-                padding: 15px 15px 0;
-                font-size: 12px;
-                background-color: #ffffff;
-                box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5);
-            }
-            .paper-description {
-                margin: 10px 0;
-
-            }
-            .paper-content {
-                margin: 10px -15px 0;
-                padding: 10px 15px;
-                background-color: #f2f0f0;
-                overflow: hidden;
-            }
-            .paper-link {
-                display: block;
-                float: left;
-            }
-            .paper-text {
-                float: left;
-                width: 150px;
-                margin-left: 10px;
-            }
-
-            /* 섹션 스타일 */
-            #main-section {
-                width: 920px;
-                margin: 0 auto;
-            }
-            @media (max-width: 919px) {
-                /*세줄*/
-                #main-section {
-                    width: 690px;
-                }
-            }
-            @media (min-width: 920px) and (max-width: 1149px) {
-                /*네줄*/
-                #main-section {
-                    width: 920px;
-                }
-            }
-            @media (min-width: 1150px) and (max-width: 1379px) {
-                /*다섯줄*/
-                #main-section {
-                    width: 1150px;
-                }
-            }
-            @media (min-width: 1380px) {
-                /*여섯줄*/
-                #main-section {
-                    width: 1380px;
-                }
-            }
-
-            /* 라이트박스 */
-            #darken-background {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                height: 100%;
-                display: none;
-                background-color: rgba(0, 0, 0, 0.9);
-                z-index: 10000;
-                overflow-y: scroll;
-            }
-            #lightbox {
-                width: 700px;
-                margin: 20px auto;
-                padding: 15px;
-                border: 1px solid #333333;
-                border-radius: 5px;
-                background-color: #ffffff;
-                box-shadow: 0 5px 5px rgba(34, 25, 25, 0.4);
-                text-align: center;
-            }
-            .user-information {
-                overflow: hidden;
-                text-align: left;
-            }
-            .user-information-image {
-                float: left;
-                width: 70px;
-            }
-            .user-information-tex {
-                float: right;
-                width: 620px;
-            }
-            .lightbox-splitter {
-                margin: 10px 0;
-            }
-        </style>
         <script src="ref_images/jquery-3.5.1.min.js"></script>
         <script src="ref_images/imagesloaded.pkgd.min.js"></script>
         <script src="ref_images/masonry.pkgd.min.js"></script>
@@ -268,6 +44,12 @@
             });
 
             function showLightBox() {
+                $("#random-image").attr({
+                    src: function() {
+                        var rnd_height = 500 + Math.floor(Math.random * 600) * 100;
+                        return "http://placekitten.com/600/" + rnd_height;
+                    }
+                });
                 $("#darken-background").show();
                 $("#darken-background").css("top", $(window).scrollTop());
                 $("body").css("overflow", "hidden");
@@ -705,7 +487,7 @@
                     </div>
                 </div>
                 <hr class="lightbox-splitter">
-                <img src="http://placehold.it/600x750">
+                <img id="random-image" src="https://placekitten.com/600/751">
             </div>
         </div>
         <footer id="main-footer"></footer>

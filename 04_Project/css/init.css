@@ -1,0 +1,19 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'NanumGothic',sans-serif;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    background-color: #f7f5f5;
+}
+
