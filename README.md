@@ -28,13 +28,8 @@ Javascript 기본 학습
 
 ---------------------------------------
 
-## Responsive Web
-응답형 웹 기본 학습
-
-------------------------------------
-
 ## Projaect
 전체 통합 프로젝트
 
-### Project 핀터레스트
-[Pinterest](https://github.com/jacksimuse/StudyHtml/tree/main/04_Project)
+#### 반응형 웹 그리드 레이아웃 웹페이지 실습
+[pinterest](https://github.com/jacksimuse/StudyHtml/tree/main/04_Project)
