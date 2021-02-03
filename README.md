@@ -35,6 +35,7 @@ Javascript 기본 학습
 [pinterest](https://github.com/jacksimuse/StudyHtml/tree/main/04_Project)
 --------------------------------------------------------
 ![결과물 1](https://github.com/jacksimuse/StudyHtml/blob/main/ref_images/result_01.png)
+-------------------------------------
 ![결과물 2](https://github.com/jacksimuse/StudyHtml/blob/main/ref_images/result_02.png)
 
 
