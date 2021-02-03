@@ -34,7 +34,7 @@
 
                 //라이트 박스
                 $(".paper").click(function () {
-                    showLightBox();
+                    showLightBox(this);
                 });
                 $("#darken-background").click(function () {
                     hideLightBox();
@@ -44,12 +44,13 @@
                     event.stopPropagation();
                 });
             });
-
-            function showLightBox() {
+            //그리드 내 이미지 클릭한것 그대로 나오게 하기
+            function showLightBox(obj) {
+                var img_src = obj.getElementsByTagName("img")[0].src;
                 $("#random-image").attr({
                     src: function () {
-                        var rnd_height = 500 + Math.floor(Math.random() * 100);
-                        return "https://placekitten.com/600/" + rnd_height;
+                        // var rnd_height = 500 + Math.floor(Math.random() * 100);
+                        return img_src;
                         }
                 });
                 $("#darken-background").show();
@@ -448,7 +449,7 @@
                     </div>
                 </div>
                 <hr class="lightbox-splitter">
-                <img id="random-image" src="https://placekitten.com/600/751">
+                <img id="random-image" src="https://placekitten.com/600/751" width="600">
             </div>
         </div>
         <footer id="main-footer"></footer>
