@@ -5,6 +5,7 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Interest</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
+
         <link rel="stylesheet" href="css/init.css">
         <link rel="stylesheet" href="css/design.css">
         <link rel="stylesheet" href="css/form.css">
@@ -28,15 +29,16 @@
 
                 //그리드 레이아웃 적용
                 $("#main-section").imagesLoaded(function () {
-                    $("#main-section").masonry(
-                        {itemSelector: ".paper", 
-                        columnWidth: 230 
-                    });
+                    $("#main-section").masonry({itemSelector: ".paper", columnWidth: 230});
                 });
 
                 //라이트 박스
-                $(".paper").click(function () { showLightBox(); });
-                $("#darken-background").click(function () { hideLightBox(); });
+                $(".paper").click(function () {
+                    showLightBox();
+                });
+                $("#darken-background").click(function () {
+                    hideLightBox();
+                });
                 //라이트 박스 제거 이벤트 보조
                 $("#lightbox").click(function (event) {
                     event.stopPropagation();
@@ -45,7 +47,7 @@
 
             function showLightBox() {
                 $("#random-image").attr({
-                    src: function() {
+                    src: function () {
                         var rnd_height = 500 + Math.floor(Math.random() * 100);
                         return "https://placekitten.com/600/" + rnd_height;
                     }
@@ -59,9 +61,7 @@
                 $("#darken-background").hide();
                 $("body").css("overflow", "auto"); //정확
             }
-
         </script>
-
     </head>
     <body>
         <header id="main-header">
@@ -144,336 +144,296 @@
                 <div class="paper-holder">
                     <a><img width="190" src="https://placekitten.com/190/328"></a>
                 </div>
-                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
                         <img src="https://placekitten.com/30/30">
                     </a>
-                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus. </p>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.
+                    </p>
                 </div>
             </div>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/290"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus. </p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/200"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. V</p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/215"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/316"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/176"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/256"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/182"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/305"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/324"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/249"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/186"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/180"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/273"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/188"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/192"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/258"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/317"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/326"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/326"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-            <section id="main-section">
-                <!-- 페이퍼 여러번 복사할 것 -->
-                <div class="paper">
-                    <div class="paper-holder">
-                        <a><img width="190" src="https://placekitten.com/190/230"></a>
-                    </div>
-                    <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <div class="paper-content">
-                        <a class="paper-link" href="#">
-                            <img src="https://placekitten.com/30/30">
-                        </a>
-                        <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
-                    </div>
-                </div>
-                <!-- 복사 끝 -->
-            </section>
-
             <!-- 복사 끝 -->
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/290"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.
+                    </p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/200"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. V</p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/215"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/316"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/176"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/256"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/182"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/305"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/324"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/249"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/186"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/180"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/273"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/188"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/192"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/258"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/317"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/326"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/326"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-holder">
+                    <a><img width="190" src="https://placekitten.com/190/230"></a>
+                </div>
+                <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="paper-content">
+                    <a class="paper-link" href="#">
+                        <img src="https://placekitten.com/30/30">
+                    </a>
+                    <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
+                </div>
+            </div>
         </section>
         <div id="darken-background">
             <div id="lightbox">
@@ -483,7 +443,8 @@
                     </a>
                     <div class="user-information-text">
                         <h3>User</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
                     </div>
                 </div>
                 <hr class="lightbox-splitter">
