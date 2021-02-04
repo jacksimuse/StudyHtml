@@ -47,19 +47,26 @@
             //그리드 내 이미지 클릭한것 그대로 나오게 하기
             function showLightBox(obj) {
                 var img_src = obj.getElementsByTagName("img")[0].src;
+                
                 $("#random-image").attr({
                     src: function () {
                         // var rnd_height = 500 + Math.floor(Math.random() * 100);
                         return img_src;
                         }
                 });
-                $("#darken-background").show();
+                $("#random-images").attr({
+                    src: function () {
+                        // var rnd_height = 500 + Math.floor(Math.random() * 100);
+                        return img_src;
+                        }
+                });
+                $("#darken-background").fadeIn();
                 $("#darken-background").css("top", $(window).scrollTop());
                 $("body").css("overflow", "hidden");
             }
-
+           
             function hideLightBox() {
-                $("#darken-background").hide();
+                $("#darken-background").fadeOut();
                 $("body").css("overflow", "auto"); //정확
             }
         </script>
@@ -149,7 +156,7 @@
                     elit. Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://www.lego.com/cdn/cs/set/assets/blte1973254178d5d07/Avengers_Hero_1600x1000.jpg?fit=crop&format=jpg&quality=80&width=1600&height=1000&dpr=1">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.
@@ -165,7 +172,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placekitten.com/190/290">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.
@@ -179,7 +186,7 @@
                 <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. V</p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placekitten.com/190/200">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -192,7 +199,7 @@
                 <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placekitten.com/190/215">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -205,7 +212,7 @@
                 <p class="paper-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placedog.net/950/640/contrast">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -219,7 +226,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placekitten.com/190/176">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -233,7 +240,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placekitten.com/190/256">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -247,7 +254,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placedog.net/900/650/b">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -261,7 +268,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_u1ihpODC9J5qUh_R6LIykZ1PWMkJDD1egQ&usqp=CAU">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -275,7 +282,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placedog.net/950/640/bn">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -289,7 +296,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPFvKJ19PFQQ8LR7gJr1RMDx8zV2vaFO4iQ&usqp=CAU">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -303,7 +310,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placedog.net/360/480/pixelate">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -317,7 +324,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-8e7eRv8w_nSJ6weLKxCbI5LNDUaLsL-D2A&usqp=CAU">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -331,7 +338,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmVwA9z0IOwz91uSl8HneMXIjAtTgLgam1sQ&usqp=CAU">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -345,7 +352,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwE8oCtF4sp_uB6JrZ9dr_-gzHFp_jftM_bA&usqp=CAU">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -359,7 +366,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placekitten.com/190/192">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -373,7 +380,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placedog.net/640/480?random">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -387,7 +394,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placekitten.com/190/317">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -401,7 +408,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placedog.net/640/480?random">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -415,7 +422,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrRhHbnFfZA6nHC0Zg-bK8mXDOrQ0-_Yi-aA&usqp=CAU">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -429,7 +436,7 @@
                 </p>
                 <div class="paper-content">
                     <a class="paper-link" href="#">
-                        <img src="https://placekitten.com/30/30">
+                        <img width="30" height="30" src="https://placedog.net/280/invert">
                     </a>
                     <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Vero maxime, architecto velit praesentium quis commodi accusamus.</p>
@@ -440,7 +447,7 @@
             <div id="lightbox">
                 <div class="user-information">
                     <a class="user-information-image" href="#">
-                        <img src="https://placekitten.com/70/70">
+                        <img id="random-image" src="https://placekitten.com/70/70" width="70">
                     </a>
                     <div class="user-information-text">
                         <h3>User</h3>
@@ -449,7 +456,7 @@
                     </div>
                 </div>
                 <hr class="lightbox-splitter">
-                <img id="random-image" src="https://placekitten.com/600/751" width="600">
+                <img id="random-images" src="#" width="600" height="600">
             </div>
         </div>
         <footer id="main-footer"></footer>
