@@ -5,7 +5,7 @@
     padding: 15px 15px 0;
     border-radius: 12px;
     font-size: 12px;
-    background-color: #ffffff;
+    background-color: #948d8d;
     box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5);
 }
 .paper-holder  img {
@@ -19,7 +19,7 @@
 .paper-content {
     margin: 10px -15px 0;
     padding: 10px 15px;
-    background-color: #f2f0f0;
+    background-color: #ddc6c6;
     overflow: hidden;
 }
 .paper-link {
